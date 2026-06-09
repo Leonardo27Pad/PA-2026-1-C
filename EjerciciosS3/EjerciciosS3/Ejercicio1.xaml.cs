@@ -45,8 +45,7 @@ namespace EjerciciosS3
             {
                 afp = ingreso * 0.06;
             }
-            double totalAportaciones = fonavi + impRenta + afp;
-            double totalPagar = ingreso - totalAportaciones;
+            double totalPagar = fonavi + impRenta + afp;
 
             lbF.Content = fonavi;
             lbIR.Content = impRenta;
