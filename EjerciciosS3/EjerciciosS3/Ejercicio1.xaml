@@ -1,0 +1,33 @@
+﻿<Window x:Class="EjerciciosS3.Ejercicio1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EjerciciosS3"
+        mc:Ignorable="d"
+        Title="Ejercicio1" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lbInfo" Content="INFORMACION GENERAL" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" Background="#FF898080" FontFamily="Times New Roman" FontSize="14"/>
+        <Label Content="Personal:" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Codigo:" HorizontalAlignment="Left" Margin="476,56,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPersonal" HorizontalAlignment="Left" Margin="72,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="399" FontFamily="Times New Roman"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Margin="532,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="137" FontFamily="Times New Roman"/>
+        <Label Content="Aportaciones:" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" Height="25" Width="92" FontSize="14"/>
+        <CheckBox x:Name="cbF" Content="Fonavi (8%)" HorizontalAlignment="Left" Margin="11,138,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <CheckBox x:Name="cbIR" Content="Imp. Renta (5%)" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <CheckBox x:Name="cbAFP" Content="A.F.P. (12%)" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="Ingreso:" HorizontalAlignment="Left" Margin="11,207,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <TextBox x:Name="txtIngreso" HorizontalAlignment="Left" Margin="72,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106" FontFamily="Times New Roman"/>
+        <Label x:Name="lbInfo_Copiar" Content="RESULTADOS" HorizontalAlignment="Center" Margin="0,243,0,0" VerticalAlignment="Top" Width="780" Background="#FF898080" FontFamily="Times New Roman" FontSize="14" Height="26"/>
+        <Label Content="Fonavi:" HorizontalAlignment="Left" Margin="13,293,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="Imp. Renta:" HorizontalAlignment="Left" Margin="13,334,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="A.F.P.:" HorizontalAlignment="Left" Margin="13,379,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="566,209,0,0" VerticalAlignment="Top" Height="22" Width="68" FontFamily="Times New Roman" FontSize="14" Click="btnCalcular_Click"/>
+        <Label x:Name="lbF" Content="" HorizontalAlignment="Left" Margin="89,293,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" Width="173"/>
+        <Label x:Name="lbIR" Content="" HorizontalAlignment="Left" Margin="89,334,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" Width="173"/>
+        <Label x:Name="lbAFP" Content="" HorizontalAlignment="Left" Margin="89,379,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" Width="173"/>
+        <Label x:Name="lbTP" Content="" HorizontalAlignment="Left" Margin="591,334,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" Width="173"/>
+        <Label Content="Total a Pagar:" HorizontalAlignment="Left" Margin="507,334,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+
+    </Grid>
+</Window>
