@@ -1,0 +1,34 @@
+﻿<Window x:Class="EjerciciosS3.Ejercicio2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EjerciciosS3"
+        mc:Ignorable="d"
+        Title="Descuento" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="136*"/>
+            <RowDefinition Height="81*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Cliente:" HorizontalAlignment="Left" Margin="212,54,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black"/>
+        <Label Content="Deuda:" HorizontalAlignment="Left" Margin="212,93,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black"/>
+        <TextBox x:Name="txtDeuda" HorizontalAlignment="Left" Margin="280,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCliente" HorizontalAlignment="Left" Margin="280,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228"/>
+        <GroupBox x:Name="gbBenPago" Header="Beneficios de Pago" Margin="212,124,310,81" FontFamily="Segoe UI Black">
+            <StackPanel Orientation="Horizontal" Margin="0,0,-2,0" Height="41">
+                <CheckBox x:Name="cbDescuento" Content="Descuento" Width="100" Height="17"/>
+                <Label Content="" Width="54"/>
+                <CheckBox x:Name="cbBonus" Content="P. Bonus" Width="110" Height="17" />
+            </StackPanel>
+        </GroupBox>
+
+        <Rectangle HorizontalAlignment="Left" Height="54" Margin="164,98,0,0"  VerticalAlignment="Top" Width="384" Fill="#FF9EF9CB" Grid.Row="1"/>
+        <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="333,10,0,0" Grid.Row="1" VerticalAlignment="Top" Click="btnCalcular_Click"/>
+        <TextBox x:Name="txtBonus" HorizontalAlignment="Left" Margin="374,224,0,0"   TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="txtDes" HorizontalAlignment="Left" Margin="212,224,0,0"   TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <Label x:Name="lbTotalPagar" HorizontalAlignment="Left" Margin="307,60,0,0" Grid.Row="1"  VerticalAlignment="Top" Width="108"/>
+        <Label Content="Total a Pagar" HorizontalAlignment="Left" Margin="224,52,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

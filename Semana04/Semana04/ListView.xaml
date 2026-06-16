@@ -1,0 +1,35 @@
+﻿<Window x:Class="Semana04.ListVew"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Semana04"
+        mc:Ignorable="d"
+        Title="ListVew" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="119*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="297*"/>
+        </Grid.RowDefinitions>
+        <ListView x:Name="lvAlumnos"  Margin="0,119,0,157" Grid.RowSpan="3" IsSynchronizedWithCurrentItem="True" Grid.ColumnSpan="3">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nombres" Width="270" DisplayMemberBinding="{Binding nombres}"/>
+                    <GridViewColumn Header="Apellidos" Width="270" DisplayMemberBinding="{Binding apellidos}"/>
+                    <GridViewColumn Header="Edad" Width="260" DisplayMemberBinding="{Binding edad}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="87,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label Content="Apellido:" HorizontalAlignment="Left" Margin="263,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtApellido" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label Content="Edad:" HorizontalAlignment="Left" Margin="514,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEdad" HorizontalAlignment="Left" Margin="591,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Button x:Name="btAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="74,50,0,0" VerticalAlignment="Top" Click="btAgregar_Click"/>
+        <Button x:Name="btMostrar" Content="Mostrar" HorizontalAlignment="Left" Margin="533,50,0,0" VerticalAlignment="Top" Click="btMostrar_Click"/>
+
+
+    </Grid>
+</Window>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{109E0868-0509-4289-A304-0B7AF708239B}</ProjectGuid>
+    <ProjectGuid>{EA80630D-204E-49C4-9582-CD99E51EF587}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>EjerciciosS3</RootNamespace>
-    <AssemblyName>EjerciciosS3</AssemblyName>
+    <RootNamespace>Semana04</RootNamespace>
+    <AssemblyName>Semana04</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,11 +55,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Ejercicio1.xaml">
+    <Compile Include="Alumno.cs" />
+    <Compile Include="Listbox.xaml.cs">
+      <DependentUpon>Listbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListView.xaml.cs">
+      <DependentUpon>ListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrodeClientes.xaml.cs">
+      <DependentUpon>RegistrodeClientes.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ComboBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Ejercicio2.xaml">
+    <Page Include="Listbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -71,16 +85,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Ejercicio1.xaml.cs">
-      <DependentUpon>Ejercicio1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Ejercicio2.xaml.cs">
-      <DependentUpon>Ejercicio2.xaml</DependentUpon>
+    <Compile Include="ComboBox.xaml.cs">
+      <DependentUpon>ComboBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RegistrodeClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

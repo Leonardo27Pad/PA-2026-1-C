@@ -1,0 +1,30 @@
+﻿<Window x:Class="Semana04.ComboBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Semana04"
+        mc:Ignorable="d"
+        Title="ComboBox" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="141*"/>
+            <RowDefinition Height="293*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <ComboBox x:Name="cmbFrutas" Width="139">
+                <ComboBoxItem Content="Pera"/>
+                <ComboBoxItem Content="Piña"/>
+                <ComboBoxItem Content="Papaya"/>
+                <ComboBoxItem Content="Limon"/>
+            </ComboBox>
+            <Button x:Name="btMostrar" Content="Mostrar Seleccionado" Click="btMostrar_Click" Width="124" Height="24"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Label Content="Items Para Agregar" Width="121"/>
+            <TextBox x:Name="txtNuevo" TextWrapping="Wrap" Text="" Width="120"/>
+            <Button x:Name="btAgregar" Content="Agregar" Click="btAgregar_Click" Width="126"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
