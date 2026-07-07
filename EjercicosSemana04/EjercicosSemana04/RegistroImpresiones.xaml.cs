@@ -38,7 +38,8 @@ namespace EjercicosSemana04
         }
         private void btnEstadistica_Click(object sender, RoutedEventArgs e)
         {
-            int c_escolar = 0, c_universitario = 0, c_organizacion = 0; for (int i = 0; i < lbTarifa.Items.Count; i++)
+            int c_escolar = 0, c_universitario = 0, c_organizacion = 0; 
+            for (int i = 0; i < lbTarifa.Items.Count; i++)
             {
                 if (lbTarifa.Items[i].ToString() == "0.5") c_escolar++;
                 else if (lbTarifa.Items[i].ToString() == "0.8") c_universitario++;
