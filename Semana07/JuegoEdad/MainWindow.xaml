@@ -33,8 +33,8 @@
                 <ColumnDefinition Width="60"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btnCorrecto" Content="Correcto" HorizontalAlignment="Right" VerticalAlignment="Center" Width="80" Height="40"/>
-            <Button x:Name="btnIncorrecto" Grid.Column="2" Content="Incorrecto" HorizontalAlignment="Left"  VerticalAlignment="Center" Width="80" Height="40"/>
+            <Button x:Name="btnCorrecto" Content="Correcto" HorizontalAlignment="Right" VerticalAlignment="Center" Width="80" Height="40" Click="btnCorrecto_Click"/>
+            <Button x:Name="btnIncorrecto" Grid.Column="2" Content="Incorrecto" HorizontalAlignment="Left"  VerticalAlignment="Center" Width="80" Height="40" Click="btnIncorrecto_Click"/>
         </Grid>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Indicale al computador un intervalo de edades" VerticalAlignment="Center" Height="26" Width="267" FontWeight="Bold"/>
         <TextBlock  Grid.Row="3"  HorizontalAlignment="Center" TextWrapping="Wrap" Text="La computadora piensa que tu edad es: " VerticalAlignment="Center" Height="26" Width="227" FontWeight="Bold"/>
