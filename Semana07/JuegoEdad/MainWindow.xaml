@@ -21,11 +21,11 @@
                 <ColumnDefinition Width="60"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="txtNumero1" HorizontalAlignment="Right" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="80"  Height="40"/>
-            <TextBox x:Name="txtNumero2" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center"  Width="80"  Height="40"/>
+            <TextBox x:Name="txtMinimo" HorizontalAlignment="Right" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="80"  Height="40"/>
+            <TextBox x:Name="txtMaximo" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Center"  Width="80"  Height="40"/>
         </Grid>
         <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="190">
-            <Button x:Name="btnPrimerInt" Content="Primer Intento" Height="40" Width="190" FontWeight="Bold"/>
+            <Button x:Name="btnPrimerInt" Content="Primer Intento" Height="40" Width="190" FontWeight="Bold" Click="btnPrimerInt_Click"/>
         </StackPanel>
         <Grid Grid.Row="5">
             <Grid.ColumnDefinitions>
