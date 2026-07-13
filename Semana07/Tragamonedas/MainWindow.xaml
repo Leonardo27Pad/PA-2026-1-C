@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tragamonedas"
         mc:Ignorable="d"
-        Title="Tragamonedas" Height="450" Width="800">
+        Title="Tragamonedas" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid Margin="50,40,50,40">
         <Grid.RowDefinitions>
             <RowDefinition Height="120"/>
@@ -15,7 +15,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="tblReloj" HorizontalAlignment="Center" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Center" Background="#FFA3FFAC" Padding="15,5,15,5" FontWeight="Bold" FontSize="48"/>
-        <Button x:Name="btnIniciar" Content="Iniciar Juego" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="25" Width="120" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btnIniciar" Content="Iniciar Juego" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="25" Width="120" FontWeight="Bold" FontSize="14" Click="btnIniciar_Click"/>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
