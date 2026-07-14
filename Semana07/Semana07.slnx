@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="Imagenes/Imagenes.csproj" Id="936e1111-a603-448c-b4b5-3c2c8235bf47" />
   <Project Path="JuegoEdad/JuegoEdad.csproj" />
   <Project Path="Tragamonedas/Tragamonedas.csproj" />
 </Solution>
