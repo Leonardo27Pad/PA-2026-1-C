@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="Imagenes/Imagenes.csproj" Id="936e1111-a603-448c-b4b5-3c2c8235bf47" />
+  <Project Path="Juego21/Juego21.csproj" Id="3f89cf5a-b249-4816-96af-f3ef483ae0e5" />
   <Project Path="JuegoEdad/JuegoEdad.csproj" />
   <Project Path="Tragamonedas/Tragamonedas.csproj" />
   <Project Path="TragamonedasV2/TragamonedasV2.csproj" Id="5b6c881e-ec08-4166-a525-34b0960192c6" />
