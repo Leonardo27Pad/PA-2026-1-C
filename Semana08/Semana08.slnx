@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="Semana08/Semana08.csproj" />
   <Project Path="Temperatura/Temperatura.csproj" Id="25e4a762-431c-4475-aeb1-6828faadfc5d" />
+  <Project Path="Votantes/Votantes.csproj" Id="f489f667-c042-42a1-9cee-dda93b8b6cae" />
 </Solution>
