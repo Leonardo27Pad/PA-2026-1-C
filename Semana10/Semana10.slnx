@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Dock/Dock.csproj" Id="0d65ebc0-6bee-4882-b670-54cd986a0900" />
+  <Project Path="FormulariosMDI/FormulariosMDI.csproj" Id="753dde79-6e2c-4c94-ad3e-9605dbb6e01d" />
+  <Project Path="Paginas/Paginas.csproj" Id="c1290890-9224-459a-9997-d3f921667d1c" />
+</Solution>

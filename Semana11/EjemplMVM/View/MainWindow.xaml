@@ -1,0 +1,39 @@
+﻿<Window x:Class="EjemplMVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EjemplMVM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="194*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
+            <TextBlock Text="Buscar:" Margin="0,0,10,0" VerticalAlignment="Center" />
+            <TextBox Width="200" Height="22" Margin="0,0,10,0" Text="{Binding textoBuscar}" />
+
+       
+            <TextBlock Text="Categoría:" Margin="0,0,10,0" VerticalAlignment="Center" />
+            <ComboBox Width="150" Height="22" Margin="0,0,10,0" 
+                      ItemsSource="{Binding categorias}" 
+                      DisplayMemberPath="Nombre" 
+                      SelectedItem="{Binding categoriaSeleccionada}"/>
+            <Button Content="Cargar Productos" Padding="5,0,5,0" Command="{Binding CargarProductosCommand}" VerticalAlignment="Center" />
+        </StackPanel>
+        <DataGrid Grid.Row="1" ItemsSource="{Binding productos}" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="100"/>
+                <DataGridTextColumn Binding="{Binding nombre}" Header="Nombre Producto" Width="*"/>
+                <DataGridTextColumn Binding="{Binding precio}" Header="Precio" Width="150"/>
+                <DataGridCheckBoxColumn Binding="{Binding discontinuado}" Header="Discontinuado" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

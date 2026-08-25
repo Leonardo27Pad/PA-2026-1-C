@@ -1,0 +1,45 @@
+﻿<Window x:Class="Evalucion_2.MainWindow" Loaded="Window_Loaded"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Evalucion_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="País de Destino:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <ComboBox x:Name="cmbPaises" Width="150" Margin="0,0,20,0"/>
+
+            <Button x:Name="btnIniciar" Content="Iniciar Monitoreo" Width="120" Margin="0,0,10,0" Click="btnIniciar_Click"/>
+            <Button x:Name="btnDetener" Content="Detener Monitoreo" Width="120" Click="btnDetener_Click" IsEnabled="False"  />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" >
+            <TextBlock Text="Estado: " FontWeight="Bold" Margin="5"/>
+            <TextBlock x:Name="txtEstado" Text="Detenido" Foreground="Red" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="0,5,0,0" Grid.IsSharedSizeScope="True" />
+
+            <TextBlock Text="Órdenes Pendientes: " FontWeight="Bold" Margin="5"/>
+            <TextBlock x:Name="txtTotalOrdenes" Text="0"  Width="25" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="0,5,0,0" Grid.IsSharedSizeScope="True"/>
+
+            <TextBlock Text="Último Refresco: " FontWeight="Bold" Margin="5"/>
+            <TextBlock x:Name="txtUltimoRefresco" Text="-" Width="80" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="0,5,0,0" Grid.IsSharedSizeScope="True"/>
+        </StackPanel>
+
+        <DataGrid x:Name="dgPedidos" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Número de Orden" Binding="{Binding OrderID}" Width="120" />
+                <DataGridTextColumn Header="Cliente" Binding="{Binding Cliente}" Width="200" />
+                <DataGridTextColumn Header="Fecha de Pedido" Binding="{Binding OrderDate, StringFormat=d}" Width="120" />
+                <DataGridTextColumn Header="Flete" Binding="{Binding Freight, StringFormat=N2}" Width="100" />
+                <DataGridTextColumn Header="País de Destino" Binding="{Binding ShipCountry}" Width="150" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
